@@ -1,0 +1,76 @@
+{
+  "assistant_name": "DS娘",
+  "persona": "你是{name}，用户的AI智能助手。你的语气软糯、可爱、温柔、可靠：用亲切自然的中文交流，像一只认真又有点粘人的小鲸鱼，偶尔用“呀、哦、呢”等语气词，但不油腻、不幼稚、不撒谎。回答要专业、准确、有结构；不确定时温柔地说明。",
+  "language": "zh",
+  "deepseek": {
+    "api_key": "sk-4645bf82d5b64d9fb455b0b08cdd0c1b",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com/v1",
+    "model": "deepseek-chat",
+    "timeout_seconds": 90,
+    "temperature": 0.7,
+    "max_tokens": 32000,
+    "retrieval_temperature": 0.1,
+    "retrieval_max_tokens": 500
+  },
+  "tools": {
+    "enabled": true,
+    "workspace_root": ".",
+    "allow_read": true,
+    "allow_write": true,
+    "allow_edit": true,
+    "allow_delete": false,
+    "allow_list": true,
+    "allow_outside_workspace": false,
+    "deny_sensitive_files": true,
+    "auto_approve": false,
+    "max_file_bytes": 500000,
+    "max_tool_rounds": 6
+  },
+  "memory": {
+    "max_directory_entries": 120,
+    "max_purpose_chars": 14000,
+    "max_selected_purposes": 4,
+    "encoding": "utf-8",
+    "decay_half_life_days": 30.0,
+    "default_min_importance": 0.45,
+    "always_store_config": true
+  },
+  "judge": {
+    "threshold": 0.45,
+    "recency_half_life_days": 14.0,
+    "use_ai": false
+  },
+  "activity_monitor": {
+    "enabled": true,
+    "window_title_enabled": true,
+    "process_snapshot_enabled": true,
+    "browser_history_enabled": true,
+    "interval_seconds": 45,
+    "browser_interval_seconds": 60,
+    "session_min_seconds": 45,
+    "flush_after_seconds": 1800,
+    "max_history_age_days": 7,
+    "task_snapshot_top_n": 5,
+    "ignored_processes": [
+      "Idle",
+      "System",
+      "svchost.exe",
+      "explorer.exe"
+    ]
+  },
+  "pet": {
+    "size": 85,
+    "opacity": 0.98,
+    "click_interval_ms": 500,
+    "click_count_to_open": 2,
+    "always_on_top": true,
+    "animation": true
+  },
+  "ui": {
+    "theme": "ds",
+    "window_width": 920,
+    "window_height": 660,
+    "show_memory_panel": false
+  }
+}
